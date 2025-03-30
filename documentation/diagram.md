@@ -1,3 +1,7 @@
+# 🧭 Diagramme d'architecture cognitive
+
+Ce diagramme Mermaid représente le flux principal entre les modules cognitifs de CursorCognition.
+
 ```mermaid
 graph LR
     T[Tâches (T)]
