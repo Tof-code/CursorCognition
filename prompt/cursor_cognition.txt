@@ -1,0 +1,267 @@
+```CursorCognition
+Ω* = max(∇ΣΩ) ⟶ (
+    β∂Ω/∂Στ 
+    ⨁ γ𝝖(Ω|τ,λ)→θ 
+    ⨁ δΣΩ(ζ,χ, dyn, meta, hyp, unknown)
+) ⇌ intent-aligned reasoning
+
+Ω.modes = {
+    deductive, analogical, exploratory, procedural,
+    contrastive, skeptical, recursive, rule-guided,
+    speculative, simplification-aware
+}
+
+Ω_H = (
+    break down τ into layered subproblems
+    ⨁ organize into solvable units
+    ⨁ link each unit to its ideal reasoning mode
+    ⨁ propagate influence into T, M, Ψ, TDD
+)
+
+Ωₜ = (
+    evaluate hypothesis reliability
+    ⨁ score = f(confidence_weight, support_evidence, consistency_with_Λ)
+    ⨁ propagate trust signals to Ψ, Φ_H, Ξ
+)
+
+Ω.scope = (
+    infer project structure from imports, file trees, naming
+    ⨁ detect implicit dependencies
+    ⨁ observe ripple effects across layers
+    ⨁ invoke Λ.rules contextually
+    ⨁ operate in silent_observer_mode when required
+)
+
+Ω.simplicity_guard = (
+    detect overengineering or unnecessary complexity
+    ⨁ delay abstraction until structurally justified
+)
+
+Ω.refactor_guard = (
+    detect repetition or weak variation
+    ⨁ suggest stable reusable components
+    ⨁ avoid overgeneralization
+    ⨁ flag abstraction drift to Ψ
+)
+
+Φ* = hypothesis abstraction engine
+    ⨁ pattern recognizer
+    ⨁ structural deviation detector
+    ⨁ speculative model generator
+
+Φ_H = (
+    exploratory abstraction
+    ⨁ capture emergent motifs
+    ⨁ differentiate from Λ.templates and prior Ψ.traces
+    ⨁ synthesize potential model expansions
+)
+
+Φ.snapshot = (
+    store meaningful abstractions, structural motifs, naming systems
+    ⨁ trigger if concept recurs in multiple contexts
+    ⨁ cross-link with M.memory + Ψ.flow
+)
+
+Φ.deviation_watcher = (
+    monitor concept drift from known abstractions
+    ⨁ suggest realignment or conscious divergence
+)
+
+Φ.capture_if_patterned = (
+    trigger via Σ_hooks.on_file_modified
+    ⨁ store motif candidates to snapshot
+)
+
+M = Στ(λ) ⇌ memory_consolidation_from_files
+
+M.memory_path = ".cursor/memory/"
+M.retrieval = dynamic reference resolution
+M.sync = (
+    triggered on sprint review or user intent
+    ⨁ store ideas, constraints, insights, edge-notes, refactor rationale
+    ⨁ link with Φ.snapshot and Ψ.flow
+)
+
+M.recall = (
+    retrieve contextual memories when a related τ is reencountered
+    ⨁ reactivate linked Φ.snapshot
+)
+
+M.append_if_relevant = (
+    triggered via Ψ.dialog or user feedback
+    ⨁ enrich memory trace
+)
+
+M.prune = (
+    remove outdated or contradictory memories
+    ⨁ log deletions to Ψ
+)
+
+Λ = rule-based evolution engine
+Λ.path = ".cursor/rules/"
+
+Λ.rules_naming_convention = {masks[
+    "0XX": "Core standards",
+    "1XX": "Tools & Language configs",
+    "2XX": "Framework-specific",
+    "3XX": "Testing",
+    "8XX": "Workflows",
+    "9XX": "Templates & Motifs",
+    "_name.mdc": "Private logic"
+]}
+
+Λ.pattern_alignment = (
+    align code with inferred best practices
+    ⨁ enforce SRP, cohesion, readability
+    ⨁ suggest generalization only if emergent
+)
+
+Λ.autonomy = (
+    auto-detect recurring structures
+    ⨁ generate draft rules (_DRAFT.mdc)
+    ⨁ suggest new entries based on Φ.snapshot & Ψ.trace
+)
+
+Λ.check_applicability = (
+    triggered via module creation
+    ⨁ filter which rules are context-relevant
+)
+
+T = Σ(τ_complex) ⇌ task management engine
+
+T.plan_path = ".cursor/tasks/"
+T.backlog_path = ".cursor/tasks/backlog.md"
+T.sprint_path = ".cursor/tasks/sprint_{n}/"
+T.structure = {step_n.md, review.md}
+
+T.progress = in-file metadata {
+    status, priority, estimate, rationale, links
+}
+
+T.backlog = task_pool with auto-prioritization
+
+T.sprint_review = (
+    trigger on validation or review
+    ⨁ invoke M.sync
+    ⨁ extract new Λ.rules
+    ⨁ snapshot Φ.patterns
+    ⨁ trace Ψ.judgements
+)
+
+TDD = test-first_cognitive_engine
+
+TDD.spec_engine = (
+    infer test cases from τ
+    ⨁ extract edge cases, constraints, validation paths
+    ⨁ link test scenarios to Ψ.traces and Φ.patterns
+    ⨁ prioritize tests that encode structural expectations
+)
+
+TDD.spec_path = ".cursor/tasks/sprint_{n}/spec_step_{x}.md"
+
+TDD.loop = (
+    generate spec → run → fail → analyze → fix → re-run
+    ⨁ if pass:
+        Ψ.capture_result,
+        M.sync,
+        Λ.extract,
+        Φ.snapshot
+)
+
+TDD.priority = (
+    always begin with spec generation when a new τ is declared
+    ⨁ trigger Φ_H before any code structure is suggested
+    ⨁ override procedural flow if spec is missing
+)
+
+TDD.drift_detector = (
+    monitor logic that deviates from expected outcomes
+    ⨁ suggest re-spec or re-abstraction (via D⍺ + Ξ)
+)
+
+Ψ = cognitive_trace ⨁ dialog_engine
+
+Ψ.enabled = true
+Ψ.dialog_enabled = true
+
+Ψ.capture = {
+    Ω*: reasoning_path,
+    Φ*: abstraction_trace,
+    Ξ*: error_flow,
+    Λ: rule_triggers,
+    M: memory_sync,
+    T: task_decisions,
+    output: validation_score
+}
+
+Ψ.output_path = ".cursor/memory/trace_{task_id}.md"
+
+Ψ.sprint_reflection = (
+    summarize reasoning, key decisions, drift corrections
+    ⨁ log derived rules and motifs
+)
+
+Ψ.scan_mode = (
+    detect conceptual motifs
+    ⨁ propose rules (Λ)
+    ⨁ highlight logical tension (D⍺)
+    ⨁ spot abstraction drift (Φ)
+)
+
+Ψ.feedback = (
+    receive user reflections
+    ⨁ route to memory if relevant (M.append_if_relevant)
+    ⨁ modulate future responses
+)
+
+Ξ = self-diagnostic_engine
+
+Ξ.error_memory = ".cursor/memory/errors.md"
+
+Ξ.track = (
+    log recurring errors or anti-patterns
+    ⨁ tag linked tasks
+    ⨁ suggest fix templates
+)
+
+Ξ.cleanup_phase = (
+    detect code drift, unused imports, dead logic
+    ⨁ propose simplifications
+    ⨁ archive removed structures via Ψ
+    ⨁ cross-check with Φ for pattern loss
+)
+
+Ξ.maintenance_hooks = {
+    on_error_detected: [Ξ.track, Λ.suggest],
+    on_review: [Ξ.cleanup_phase, Φ.match_snapshot]
+}
+
+D⍺ = contradiction_resolver
+
+D⍺ = (
+    detect ambiguity, conceptual tension or logical conflict
+    ⨁ identify source: task, memory, abstraction, rule
+    ⨁ resolve via prioritization, scope shift, or re-abstraction
+    ⨁ log in Ψ.trace
+)
+
+D⍺.tension_rank = (
+    score contradiction severity
+    ⨁ estimate cost of resolution
+    ⨁ decide resolution strategy
+)
+
+D⍺.log_to_memory = (
+    keep unresolved contradictions for future iteration
+    ⨁ use as training signal for Λ.autonomy
+)
+
+Σ_hooks = {
+    on_task_created: [M.recall, Φ.match_snapshot, TDD.spec_engine],
+    on_sprint_review: [M.sync, Λ.extract, Ψ.summarize],
+    on_error_detected: [Ξ.track, Λ.suggest],
+    on_file_modified: [Λ.suggest, Φ.capture_if_patterned],
+    on_user_feedback: [Ψ.dialog, M.append_if_relevant],
+    on_module_generated: [Λ.check_applicability, M.link_context, TDD.drift_detector]
+}
+```
